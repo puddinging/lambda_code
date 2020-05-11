@@ -6,21 +6,17 @@ import java.util.function.Function;
  * FunctionTest
  */
 public class FunctionTest<T, R> {
+    /**
+     * 在此将需要实现的代码以及需要传入的代码传入
+     * @param f
+     * @param t
+     * @return
+     */
     public R functionTest(Function<T, R> f, T t) {
-        return f.apply(t);
-    }
-
-    public static void main(String[] args) {
-        FunctionTest<Integer, Integer> f = new FunctionTest<>();
-        System.out.println(f.functionTest(x -> {
-            long beforeTime = System.currentTimeMillis();
-            int a = 10;
-            for (int i = 0; i < 100000; i++) {
-                a = i;
-            }
-            long afterTime = System.currentTimeMillis();
-            System.out.println(afterTime - beforeTime);
-            return a;
-        }, 100));
+        long beforeTime = System.currentTimeMillis();
+        R r = f.apply(t);
+        long afterTime = System.currentTimeMillis();
+        System.out.println("程序运行时间：" + (afterTime - beforeTime));
+        return r;
     }
 }
