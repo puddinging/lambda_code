@@ -1,7 +1,7 @@
 package com.jiefeng;
 
 import com.jiefeng.utils.FunctionTest;
-import com.jiefeng.demo.*;
+
 
 /**
  * Hello world!
@@ -19,12 +19,15 @@ public class App {
             for (int i = 0; i < 1000; i++) {
                 System.out.println(System.currentTimeMillis());
             }
-            if (t == 1) {
-                return true;
-            } else {
-                return false;
-            }
+            return t == 1;
         }, 1);
         System.out.println(b);
+//        step over 跳过当前代码
+//        step into 进入当前代码
+//        step out  跳出当前函数
+//        resume 恢复程序到下一个断点
+//        run to curse 跳到当前鼠标位置
+//        fource step into 强制进入
     }
+
 }
