@@ -17,4 +17,11 @@ public class AppTest {
         System.out.println("hello world");
         assertTrue(true);
     }
+
+    @Test
+    public  void test() {
+        int a = 3;
+        assert(a == 10);
+        System.out.println("x");
+    }
 }
