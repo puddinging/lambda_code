@@ -14,7 +14,7 @@ public class AppTest {
      */
     @Test
     public void shouldAnswerWithTrue() {
-        System.out.println("hello world");
+        System.out.println("hello w orld");
         assertTrue(true);
     }
 
@@ -23,5 +23,6 @@ public class AppTest {
         int a = 3;
         assert(a == 10);
         System.out.println("x");
+        System.out.println("jfkdfjdk");
     }
 }
