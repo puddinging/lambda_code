@@ -2,6 +2,8 @@ package com.jiefeng;
 
 import static org.junit.Assert.assertTrue;
 
+import com.definesys.mpaas.query.util.MpaasQueryUtil;
+
 import org.junit.Test;
 
 
@@ -20,9 +22,6 @@ public class AppTest {
 
     @Test
     public  void test() {
-        int a = 3;
-        assert(a == 10);
-        System.out.println("x");
-        System.out.println("jfkdfjdk");
+        System.out.println(MpaasQueryUtil.decryptRowId("2UVA2L4HJ2KRSKBOV6WD5BI45Q", "1234567890ABCDEF"));
     }
 }
